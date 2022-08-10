@@ -28,9 +28,7 @@ function calculatesFarePrice(start, destination){
         farePrice = 0;
       }
       else if(distanceForFare >400 && distanceForFare <2000){
-         let distanceOver400
-         distanceOver400 = distanceForFare - 400;
-        farePrice = Math.abs(distanceOver400) * 0.02;
+        farePrice = Math.abs((distanceForFare - 400)) * 0.02;
       }
       else if(distanceForFare >2000 && distanceForFare <2500){
         farePrice = 25;
